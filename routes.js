@@ -68,7 +68,7 @@ routes.put("/cartItems/:id", (req, res) => {
     cartItems.splice(index, 1);
     cartItems.push(item);
   }
-  res.json(item);
+  res.json(cartItems);
   res.status(200);
 });
 
